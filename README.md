@@ -1,8 +1,9 @@
 # Sistemas Operativos: Daniel Felipe Ramírez Vargas 
 
 Este repositorio contiene los códigos desarrollados en la materia de *Sistemas Operativos*
-construídos por Daniel Felipe Ramírez Vargas.
-Por favor ver a continuación la estructura y descripción de cada directorio
+construídos por Daniel Felipe Ramírez Vargas.  
+Por favor ver a continuación la estructura y descripción de cada directorio  
+
 
 
 
