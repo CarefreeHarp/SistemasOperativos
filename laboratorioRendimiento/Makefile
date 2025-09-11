@@ -1,10 +1,11 @@
 CC = gcc
-
+DIRECTORIO = Ejecutables
 MODULO = modulo
 
 
 labRendiRamirez:
-	$(CC) -c $(MODULO).c
-	$(CC) $@.c $(MODULO).o -o $@
+	mkdir Ejecutables
+	$(CC) -c $(MODULO).c -o $(DIRECTORIO)/$(MODULO).o
+	$(CC) $@.c $(DIRECTORIO)/$(MODULO).o -o $(DIRECTORIO)/$@
 clear:
-	$(RM) $(PROGRAMAS) $(MODULO).o
+	rm -rf $(DIRECTORIO)
