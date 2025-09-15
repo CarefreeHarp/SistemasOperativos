@@ -32,6 +32,10 @@
 *************************************************************************************/
 
 
+
+//Este modulo se utiliza para guardar los prototipos de las funciones
+
+
 #ifndef __MODULO_H__
 #define __MODULO_H__
 

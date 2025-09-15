@@ -38,43 +38,51 @@
 #include <sys/time.h>
 #include "modulo.h"
 
-double *mA, *mB, *mC;
+double *mA, *mB, *mC;//declara apuntadores a datos del tipo double globales
 
 int main(int argc, char *argv[]) {
-    if(argc<=1){
+    if(argc<=1){ //valida que se hayan ingresado los argumentos de entrada necesarios
         printf("Numero argumentos incorrectos\n");
         printf("\n\t $ejecutable.exe DIM \n");
-        return -1;
+        return -1;//termina el programa si no se ingresan los argumentos correctos
     }
 
-    int N = (int) atof(argv[1]);
+    int N = (int) atof(argv[1]); //convierte el argumento de entrada a entero (dimensión de la matriz)
     if(N<=0){
-        printf("\n Valores deben ser mayor que cero\n");
+        printf("\n Valores deben ser mayor que cero\n"); // ¿Validación de que la dimensión sea mayor que cero
         return -1;
     };
 
-    mA = (double *) malloc(N*N*sizeof(double));
-    mB = (double *) malloc(N*N*sizeof(double));
-    mC = (double *) calloc(N*N,sizeof(double));
+    //se reserva la cantidad de memoria necesaria para las matrices cuadradas de dimensión N
+
+    mA = (double *) malloc(N*N*sizeof(double));// reserva memoria para las mA
+    mB = (double *) malloc(N*N*sizeof(double)); // reserva memoria para las mB
+    mC = (double *) calloc(N*N,sizeof(double)); // reserva memoria para las mC e inicializa en cero todas las posiciones
 
 	/** Se inicializan las 2 matrices **/
 	iniMatriz(N, mA, mB);
 
+    //se imprimen las matrices
 	imprMatrices(N, mA);
 	imprMatrices(N, mB);
 
+    //se toma el tiempo inicial antes de empezar el algoritmo de multiplicación
     InicioMuestra();
 
+    //se multiplican mA y mB
     multiMatrizClasica(mA, mB, mC, N);
 
+    //se toma el tiempo final despues de terminar el algoritmo de multiplicación y se muestra por pantalla
     FinMuestra();
     
+    //se imprime la matriz mC, es decir el resultado de la multiplicación 
 	imprMatrices(N, mC);
 
-        printf("\n\tFin del programa.............!\n");
-        free(mA);
-        free(mB);
-        free(mC);
-        return 0;
+    //se libera la memoria, como siempre se debe hacer
+    printf("\n\tFin del programa.............!\n");
+    free(mA);
+    free(mB);
+    free(mC);
+    return 0;
 
 }

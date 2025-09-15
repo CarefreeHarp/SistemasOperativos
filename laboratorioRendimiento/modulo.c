@@ -41,18 +41,18 @@
 
 struct timeval ini, fin;
 
-/*Funcion para tomar tiempo inicial*/
+/*Funcion para tomar tiempo inicial y guardarlo en ini*/
 void InicioMuestra(){
 	gettimeofday(&ini, (void *)0);
 }
 
 /*Funcion para tomar tiempo final*/
 void FinMuestra(){
-	gettimeofday(&fin, (void *)0);
-	fin.tv_usec -= ini.tv_usec;
-	fin.tv_sec -= ini.tv_sec;
-	double tiempo = (double) (fin.tv_sec*1000000 + fin.tv_usec);
-	printf("%9.0f \n", tiempo);
+	gettimeofday(&fin, (void *)0); //Guarda el momento final en fin
+	fin.tv_usec -= ini.tv_usec;//Dado que la estructura timeval tiene dos campos, uno para segundos y otro para microsegundos,
+	fin.tv_sec -= ini.tv_sec;// Se hace la resta en cada uno (tv_sec y tv_usec)
+	double tiempo = (double) (fin.tv_sec*1000000 + fin.tv_usec); //Se convierte todo a microsegundos ya que un segundo es un millon de microsegundos
+	printf("Tiempo total: %9.0f \n", tiempo);//se imprime el tiempo total en microsegundos
 }
 
 /*Inicializa dos matrices de acuerdo a un contador i que va desde 0 hasta N*N (N es enviado como parametro a la funcion)*/
@@ -77,6 +77,10 @@ void imprMatrices(int n, double *matriz){
     }
 };
 
+
+//Multiplica las matrices m1 y m2, y almacena el resultado en m3
+//utilizando el algoritmo de multiplicacion clasica
+//es decir, filas por columnas
 void multiMatrizClasica(double *m1, double *m2, double *m3, int N){
     for(int i=0; i<N; i++){
         for(int j=0; j<N; j++){

@@ -13,6 +13,11 @@ Por favor ver a continuación la estructura y descripción de cada directorio
 
 - **Tarea2**: Programas desarrollados con el objetivo de aprender la compilación modular utilizando archivo header y compilando con Makefile.  
 
-- **rendimientoRamirez**: Directorio en desarrollo...  
+- **laboratorioRendimiento**  
+  Implementación del algoritmo clásico de multiplicación de matrices con reserva dinámica de memoria, medición de tiempos y base para concurrencia con **PTHREAD**.  
+  - `labRendiRamirez.c`: programa principal.  
+  - `modulo.c` y `modulo.h`: funciones auxiliares y prototipos.  
+  - `Makefile`: automatiza la compilación.  
+  - `Ejecutables/`: carpeta generada con los binarios y objetos. 
 
 
