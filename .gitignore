@@ -1,2 +1,4 @@
 */Ejecutables
 *.o
+*.exe
+*.out
