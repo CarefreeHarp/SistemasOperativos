@@ -18,6 +18,5 @@ Por favor ver a continuación la estructura y descripción de cada directorio
   - `labRendiRamirez.c`: programa principal.  
   - `modulo.c` y `modulo.h`: funciones auxiliares y prototipos.  
   - `Makefile`: automatiza la compilación.  
-  - `Ejecutables/`: carpeta generada con los binarios y objetos. 
 
 
