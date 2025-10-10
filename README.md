@@ -19,4 +19,4 @@ Por favor ver a continuación la estructura y descripción de cada directorio
   - `modulo.c` y `modulo.h`: funciones auxiliares y prototipos.  
   - `Makefile`: automatiza la compilación.  
 
-- **LaboratorioFORK&PIPE**: Programas desarrollados en C con el objetivo de aprender sobre procesos hijos creados con Fork() y la comunicación entre ellos utilizando pipes usando la librería "unistd.h" 
+- **LaboratorioFORK&PIPE**: Programas desarrollados en C con el objetivo de aprender sobre procesos hijos creados con Fork() y la comunicación entre ellos con pipes usando la librería "unistd.h" 
