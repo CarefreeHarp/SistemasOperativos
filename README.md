@@ -11,7 +11,7 @@ Por favor ver a continuación la estructura y descripción de cada directorio
 
 - **Retos**: Programas desarrollados en C con el objetivo de estudiar el comportamiento de la reserva de memoria usando malloc, calloc y realloc.  
 
-- **Tarea2**: Programas desarrollados con el objetivo de aprender la compilación modular utilizando archivo header y compilando con Makefile.  
+- **Tarea2**: Programas desarrollados con el objetivo de aprender la compilación modular utilizando archivo header y compilando con Makefile. 
 
 - **laboratorioRendimiento**  
   Implementación del algoritmo clásico de multiplicación de matrices con reserva dinámica de memoria con medición de tiempos para evaluar el rendimiento
@@ -19,4 +19,4 @@ Por favor ver a continuación la estructura y descripción de cada directorio
   - `modulo.c` y `modulo.h`: funciones auxiliares y prototipos.  
   - `Makefile`: automatiza la compilación.  
 
-
+- **LaboratorioFORK&PIPE**: Programas desarrollados en C con el objetivo de aprender sobre procesos hijos creados con Fork() y la comunicación entre ellos utilizando pipes usando la librería "unistd.h" 
