@@ -44,5 +44,5 @@ int main(){
     }
 
     printf("Fin del programa! \n");
-    return 0;
+    return 0;//devolvemos el 0 que prometimos en la funcion main
 }
