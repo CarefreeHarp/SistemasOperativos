@@ -29,7 +29,9 @@ cliente:
 	$(GCC) $@.c -o $(DIRECTORIO)/$@
 servidor:
 	mkdir -p $(DIRECTORIO)
-	rm -f /tmp/PIPE_COMUNICATOR
+
+#Cada vez que se compile, borraremos el fichero que creamos para que no haya errores
+	rm -f /tmp/PIPE_COMUNICATOR 
 	$(GCC) $@.c -o $(DIRECTORIO)/$@
 clear:
 	$(RM) -rf $(DIRECTORIO)
