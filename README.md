@@ -21,7 +21,7 @@ Por favor ver a continuación la estructura y descripción de cada directorio
 
 - **LaboratorioFORK&PIPE**: Programas desarrollados en C con el objetivo de aprender sobre procesos hijos creados con Fork() y la comunicación entre ellos con pipes usando la librería "unistd.h" 
 
-- **labP_CRamirez**: Implementación del modelo *Productor–Consumidor* utilizando **named pipes (FIFOs)** para la comunicación entre procesos independientes y empleando las funciones open, read, write y close de las librerías "fcntl.h" y "unistd.h".
+- **Ramirez_PC_3884**: Implementación del modelo *Productor–Consumidor* utilizando **named pipes (FIFOs)** para la comunicación entre procesos independientes y empleando las funciones open, read, write y close de las librerías "fcntl.h" y "unistd.h".
 
 - **hilos**: Directorio en desarrollo...
 
