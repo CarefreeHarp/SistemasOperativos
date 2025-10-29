@@ -9,15 +9,21 @@
 #************************************************************************************/
 
 GCC = gcc
-FLAGS =
+FLAGS = -lpthread
 MODULO =
 DIRECTORIO = Ejecutables
 
 PROGRAMAS = hilos
 
-hilos_pthread01:
+lab_pthread00_Ramirez:
 	mkdir -p $(DIRECTORIO)
-	$(GCC) $@.c -o $(DIRECTORIO)/$@
+	$(GCC) $@.c -o $(DIRECTORIO)/$@ $(FLAGS)
+lab_pthread01_Ramirez:
+	mkdir -p $(DIRECTORIO)
+	$(GCC) $@.c -o $(DIRECTORIO)/$@ $(FLAGS)
+lab_pthread02_Ramirez:
+	mkdir -p $(DIRECTORIO)
+	$(GCC) $@.c -o $(DIRECTORIO)/$@ $(FLAGS)
 clear:
 	$(RM) -rf $(DIRECTORIO)
 

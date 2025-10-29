@@ -25,3 +25,5 @@ Por favor ver a continuación la estructura y descripción de cada directorio
 
 - **hilos**: Directorio en desarrollo...
 
+- **TallerProcesos_Aponte-Ramirez**: TallerProcesos_Aponte-Ramirez: Programa en C que crea una jerarquía de procesos (padre, dos hijos y un nieto) usando fork() y comunica sus resultados con pipe() con ayuda de memoria dinámica y sincronización no determinista con la funcion usleep()
+
