@@ -39,7 +39,7 @@ system("make");
 #Para cada laboratorio, se aplican reglas diferentes para ejecutarlos
 #En el caso del laboratiorio #0, siendo el único programa que requiere de argumentos, se puso por defecto como 10 (se puede modificar a su gusto).
 #En el caso del laboratorio 4 al 8, se imprime un mensaje adicional ya que el laboratorio 4 debe hacer muchas iteraciones y se demorará bastante,
-# mientras que del laboratorio 5 al 8, se ejecutará 1000 veces cada uno para evaluar posibles Race Conditions.
+# asimismo, del laboratorio 5 al 8, se ejecutarán 1000 veces cada uno para evaluar posibles Race Conditions.
 #El resto de laboratorios se ejecutan con normalidad.
 foreach $lab (@laboratorios){
 	printf("\n\n\n========================= RESULTADO %s =========================\n", $lab);
