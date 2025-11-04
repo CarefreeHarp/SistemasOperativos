@@ -27,3 +27,6 @@ Por favor ver a continuación la estructura y descripción de cada directorio
 
 - **TallerProcesos_Aponte-Ramirez**: Programa en C que crea una jerarquía de procesos (padre, dos hijos y un nieto) usando fork() y comunica sus resultados con pipe() con ayuda de memoria dinámica y sincronización no determinista con la funcion usleep()
 
+- **LaboratorioRaceConditions-Deadlock**: Programas escritos en C que por medio de la librería pthread, crean diferentes cantidades de hilos con el objetivo de estudiar casos donde se puedan encontrar Race Conditions. Se incluye un programa escrito en **Perl** que permite una compilación y ejecución de todos los ficheros de forma rápida, organizada y pertinente
+
+- **TallerRendimiento**: En desarrollo...
