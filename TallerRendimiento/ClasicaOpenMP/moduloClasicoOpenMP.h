@@ -1,6 +1,6 @@
 /*#######################################################################################
  #* Fecha: 29 Oct 2025
- #* Autor: Juan David Daza
+ #* Autor: Guillermo Aponte, Daniel Ramírez, David Tobar, Juan Daza, Profesor J. Corredor, PhD
  #* Programa:
  #* 	 Multiplicación de Matrices algoritmo clásico usando OpenMP
  #* Versión:
