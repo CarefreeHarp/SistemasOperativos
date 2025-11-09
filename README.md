@@ -29,4 +29,6 @@ Por favor ver a continuación la estructura y descripción de cada directorio
 
 - **LaboratorioRaceConditions-Deadlock**: Programas escritos en C que por medio de la librería pthread, crean diferentes cantidades de hilos con el objetivo de estudiar casos donde se puedan encontrar Race Conditions. Se incluye un programa escrito en *Perl* que permite una compilación y ejecución de todos los ficheros de forma rápida, organizada y pertinente
 
+-**labOpenMP**: Programas escritos en C donde se estudia el comportamiento de algunas directivas y funciones de OpenMP
+
 - **TallerRendimiento**: En desarrollo...
