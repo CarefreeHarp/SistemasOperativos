@@ -32,3 +32,6 @@ Por favor ver a continuación la estructura y descripción de cada directorio
 - **labOpenMP**: Programas escritos en C donde se estudia el comportamiento de algunas directivas y funciones de OpenMP
 
 - **TallerRendimiento**: En desarrollo...
+
+- **LabSistemaDeFicheros**: Son programas diseñados en C que por medio de funciones del sistema, permiten analizar la estructura de directorios proporcionando la información de los distintos ficheros
+contenidos allí. Se usa la funcion stat para indicar características especiales como peso o permisos
