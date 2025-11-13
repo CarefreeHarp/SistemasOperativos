@@ -71,7 +71,8 @@ int main() {
         // Mostrar el modo y los permisos de lectura para el propietario
         printf("modo :%#o:", atr.st_mode);
 
-        // Comprobar si tiene permiso de lectura para el propietario
+        // Comprobar si tiene permiso de lectura para el propietario, esto se hace con un AND lógico a nivel de bits
+        //Ya que el segundo dígito 
         if ((atr.st_mode & 0400) != 0)
           printf(" permiso R para propietario\n");
         else

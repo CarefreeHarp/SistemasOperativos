@@ -68,7 +68,7 @@ int main() {
 }
 
 /*Observaciones/Notas/Conclusiones:
-                                La funcion stat recibe la ruta de un fichero y guarda los datos del mismo
-                                La funcion ISREG permite identificar si el archivo es un fichero para mostrarlo
-                                Es necesario cerrar el directorio al finalizar la ejecución para liberar recursos
+    La funcion stat recibe la ruta de un fichero y guarda los datos del mismo
+    La funcion ISREG permite identificar si el archivo es un fichero para mostrarlo
+    Es necesario cerrar el directorio al finalizar la ejecución para liberar recursos
 */
