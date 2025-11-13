@@ -34,4 +34,5 @@ Por favor ver a continuación la estructura y descripción de cada directorio
 - **TallerRendimiento**: En desarrollo...
 
 - **LabSistemaDeFicheros**: Son programas diseñados en C que por medio de funciones del sistema, permiten analizar la estructura de directorios proporcionando la información de los distintos ficheros
-contenidos allí. Se usa la funcion stat para indicar características especiales como peso o permisos
+contenidos allí. Se usa la funcion stat para indicar características especiales como peso o permisos.
+Nota fichero lab01.c: Este fichero lee el archivo readme.txt, al estar este último fuera del directorio ejecutables, la ruta es ../readme.txt
