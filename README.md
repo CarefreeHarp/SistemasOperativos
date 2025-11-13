@@ -29,7 +29,7 @@ Por favor ver a continuación la estructura y descripción de cada directorio
 
 - **labOpenMP**: Programas escritos en C donde se estudia el comportamiento de algunas directivas y funciones de OpenMP
 
-- **TallerRendimiento**: Taller orientado a la toma de tiempos de ejecución con el objetivo de evaluar el desempeño de distintos algoritmos de multiplicación de matrices paralelizados con distintos métodos. Se hizo con el fin de demostrar el poder del principio de localidad espacial en el HPC y analizar los componentes de hardware de distintas máquinas 
+- **TallerRendimiento**: Taller orientado a la toma de tiempos de ejecución con el objetivo de evaluar el desempeño de distintos algoritmos de multiplicación de matrices paralelizados con distintos métodos. Se hizo con el fin de demostrar el poder del principio de localidad espacial en el HPC en máquinas con hardware diferente
 
 - **LabSistemaDeFicheros**: Son programas diseñados en C que por medio de funciones del sistema, permiten analizar la estructura de directorios proporcionando la información de los distintos ficheros
 contenidos allí. Se usa la funcion stat para indicar características especiales como peso o permisos.
