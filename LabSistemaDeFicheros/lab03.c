@@ -5,7 +5,7 @@
  * Autores: Daniel Ramírez
  * Materia: Sistemas Operativos
  * Tema: Sistema de Ficheros
- * Archivo: lab01.c
+ * Archivo: lab03.c
  * Descripcion: Este programa dado el nombre de un directorio que esté en el mismo directorio que
  *              el ejecutable de este programa, mostrará el nombre, modo, permisos y
  *              los ficheros regulares modificados en los últimos 10 días que se encuentren en el directorio indicado
@@ -68,13 +68,13 @@ int main() {
         printf("fichero :%s:", nomfich);
         er = stat(nomfich, &atr);
 
-        // Mostrar el modo y los permisos de lectura para el propietario
+        // Mostrar los permisos de lectura para el propietario
         printf("modo :%#o:", atr.st_mode);
 
         // Comprobar si tiene permiso de lectura para el propietario, esto se hace con un AND lógico a nivel de bits
         //Ya que el segundo dígito hace referencia a los permisos para el propietario, el segundo digito es para los del mismo grupo
-	//Y el tercero es para los demás usuarios
-	//En este caso el 4 indica esos permisos
+        //Y el tercero es para los demás usuarios
+        //En este caso el 4 indica esos permisos
         if ((atr.st_mode & 0400) != 0)
           printf(" permiso R para propietario\n");
         else

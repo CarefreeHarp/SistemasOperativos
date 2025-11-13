@@ -5,7 +5,7 @@
  * Autores: Daniel Ramírez
  * Materia: Sistemas Operativos
  * Tema: Sistema de Ficheros
- * Archivo: lab01.c
+ * Archivo: lab02.c
  * Descripcion: Este programa dado el nombre de un directorio que esté en el mismo directorio que
  *              el ejecutable de este programa, mostrará el nombre y tamaño de cada uno de
  *              los ficheros regulares que se encuentren en el directorio indicado
