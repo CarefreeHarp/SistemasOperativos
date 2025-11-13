@@ -5,8 +5,15 @@
  * Autores: Guillermo Aponte, Daniel Ramírez
  * Materia: Sistemas Operativos
  * Tema: IPC con named Semaphores y Sahred Memory
- * Archivo: 
- * Descripcion:
+ * Archivo: moduloProducer.c
+ * Descripcion: Implementa las funciones del módulo productor 
+ *              encargadas de crear y configurar los semáforos
+ *              con nombre, crear y dimensionar el bloque de 
+ *              memoria compartida, mapear dicha región para 
+ *              escribir secuencialmente en el búfer circular
+ *              empleando sincronización con semáforos vacio/lleno
+ *              y, finalmente, desmapear la memoria y eliminar 
+ *              todos los recursos de IPC utilizados.
  * Fecha: 14/11/25
  ******************************************************************/
 #include "moduloProducer.h"

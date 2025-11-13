@@ -5,8 +5,12 @@
  * Autores: Guillermo Aponte, Daniel Ramírez
  * Materia: Sistemas Operativos
  * Tema: IPC con named Semaphores y Sahred Memory
- * Archivo: 
- * Descripcion:
+ * Archivo: consumer.c
+ * Descripcion: Implementa el proceso consumidor que abre los 
+ *              semáforos POSIX con nombre y la memoria compartida,
+ *              mapea la región de memoria para leer los datos 
+ *              producidos y, tras consumirlos, libera todos los 
+ *              recursos antes de finalizar.
  * Fecha: 14/11/25
  ******************************************************************/
 #include "../modulosConsumer/moduloConsumer.h" //incluimos el modulo de declaración de funciones

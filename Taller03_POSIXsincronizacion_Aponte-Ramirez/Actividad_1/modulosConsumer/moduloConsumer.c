@@ -5,7 +5,7 @@
  * Autores: Guillermo Aponte, Daniel Ramírez
  * Materia: Sistemas Operativos
  * Tema: IPC con named Semaphores y Sahred Memory
- * Archivo: 
+ * Archivo: moduloConsumer.c 
  * Descripcion:
  * Fecha: 14/11/25
  ******************************************************************/

@@ -5,11 +5,25 @@
  * Autores: Guillermo Aponte, Daniel Ramírez
  * Materia: Sistemas Operativos
  * Tema: IPC con named Semaphores y Sahred Memory
- * Archivo: 
- * Descripcion:
+ * Archivo: moduloProducer.h 
+ * Descripcion: Define la estructura de datos compartida y los
+ *              prototipos de las funciones del módulo productor
+ *              encargadas de crear los semáforos con nombre,
+ *              abrir la memoria compartida, mapearla para 
+ *              escribir en el búfer circular y liberar los 
+ *              recursos utilizados por el proceso productor.
  * Fecha: 14/11/25
  ******************************************************************/
+
+  /*Se verifica si el identificador __MODULOPRODUCER_H__ ha sido definido antes.
+ Sirve para evitar que el contenido de este archivo se incluya varias veces en un mismo programa.
+ Si ya estuviera definido, el compilador se saltaría todo el contenido hasta el #endif.*/
 #ifndef __MODULOPRODUCER_H__
+
+ /*Se define el identificador __MODULOPRODUCER_H__.
+De tal fomra se marca marca que el archivo ya fue incluido una vez, evitando duplicaciones posteriores.
+En este espacio se colocan las declaraciones, estructuras, constantes o prototipos de funciones
+que se necesitan compartir entre varios archivos .c del proyecto.*/
 #define __MODULOPRODUCER_H__
 
 #include <stdio.h>// librería para manejo de entradas y salidas

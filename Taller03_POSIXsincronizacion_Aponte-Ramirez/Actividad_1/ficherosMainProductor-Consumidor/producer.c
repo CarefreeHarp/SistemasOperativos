@@ -5,9 +5,12 @@
  * Autores: Guillermo Aponte, Daniel Ramírez
  * Materia: Sistemas Operativos
  * Tema: IPC con Named Semaphores y Shared Memory
- * Archivo: mainProducer.c
- * Descripción: Proceso Productor que utiliza memoria compartida
- *              y semáforos POSIX para sincronizar con un consumidor.
+ * Archivo: producer.c
+ * Descripción: Implementa el proceso productor que crea los 
+ *              semáforos POSIX con nombre y la memoria compartida,
+ *              mapea la región compartida, genera los datos en el 
+ *              búfer circular y, al finalizar, libera todos los 
+ *              recursos utilizados.
  * Fecha: 14/11/25
  ******************************************************************/
 
