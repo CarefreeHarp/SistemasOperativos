@@ -1,3 +1,8 @@
+#NOTA: DESPUES DE COMPILAR, ES NECESARIO ACCEDER AL DIRECTORIO "Ejecutables" (cd Ejecutables)
+#	   Para ejecutar desde allí los programas
+#      En el caso del lab02 y lab03, se requiere escribir almenos ../ ya que
+#      el directorio Ejecutables no lleva estructura de directorios por dentro
+
 GCC = gcc
 
 EJECUTABLES = Ejecutables
