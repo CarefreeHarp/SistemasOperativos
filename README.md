@@ -23,15 +23,13 @@ Por favor ver a continuación la estructura y descripción de cada directorio
 
 - **Ramirez_PC_3884**: Implementación del modelo *Productor–Consumidor* utilizando **named pipes (FIFOs)** para la comunicación entre procesos independientes y empleando las funciones open, read, write y close de las librerías "fcntl.h" y "unistd.h".
 
-- **hilos**: Directorio en desarrollo...
-
 - **TallerProcesos_Aponte-Ramirez**: Programa en C que crea una jerarquía de procesos (padre, dos hijos y un nieto) usando fork() y comunica sus resultados con pipe() con ayuda de memoria dinámica y sincronización no determinista con la funcion usleep()
 
 - **LaboratorioRaceConditions-Deadlock**: Programas escritos en C que por medio de la librería pthread, crean diferentes cantidades de hilos con el objetivo de estudiar casos donde se puedan encontrar Race Conditions. Se incluye un programa escrito en *Perl* que permite una compilación y ejecución de todos los ficheros de forma rápida, organizada y pertinente
 
 - **labOpenMP**: Programas escritos en C donde se estudia el comportamiento de algunas directivas y funciones de OpenMP
 
-- **TallerRendimiento**: En desarrollo...
+- **TallerRendimiento**: Taller orientado a la toma de tiempos de ejecución con el objetivo de evaluar el desempeño de distintos algoritmos de multiplicación de matrices paralelizados con distintos métodos. Se hizo con el fin de demostrar el poder del principio de localidad espacial en el HPC y analizar los componentes de hardware de distintas máquinas 
 
 - **LabSistemaDeFicheros**: Son programas diseñados en C que por medio de funciones del sistema, permiten analizar la estructura de directorios proporcionando la información de los distintos ficheros
 contenidos allí. Se usa la funcion stat para indicar características especiales como peso o permisos.
