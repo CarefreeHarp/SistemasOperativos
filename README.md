@@ -34,3 +34,5 @@ Por favor ver a continuación la estructura y descripción de cada directorio
 - **LabSistemaDeFicheros**: Son programas diseñados en C que por medio de funciones del sistema, permiten analizar la estructura de directorios proporcionando la información de los distintos ficheros
 contenidos allí. Se usa la funcion stat para indicar características especiales como peso o permisos.
 Nota fichero lab01.c: Este fichero lee el archivo readme.txt, al estar este último fuera del directorio ejecutables, la ruta es ../readme.txt
+
+- **Taller03_POSIXsincronizacion**: Programas escritos en C con el objetivo de estudiar IPC (Inter Process Communication con named semaphores), sincronización (mutex, variables de condición) y paralelismo (dividiendo el trabajo sin necesidad de sincronización). 
