@@ -35,7 +35,7 @@ void *buscarMax(void *parametro){
 
 
         /*Ciclo desde 0 hasta argumentos-> fin*/
-        for(int i=0; i<argumentos->fin; i++){
+        for(int i=argumentos->inicio; i<argumentos->fin; i++){
 
                 /*Según como vaya encontrando valores en el vector mas grandes que maxparcial, va remplazandoe esta variable con lo que encuentra,
                 de tal forma que al final de la ejecución el valor que queda es el mas grande de todos*/

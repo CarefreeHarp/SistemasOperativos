@@ -13,33 +13,21 @@
 #*******************************************************************
 
 
-# Compilador
 GCC = gcc
-
-# Flags de compilación
 FLAGS = -pthread -lrt
-
-# Archivos
-MAIN = posixSincro
 MODULO = moduloSincro
-EJECUTABLE = programaSincro
-
-# Carpeta donde se guardarán los ejecutables y objetos
 EJECUTABLES = Ejecutables
+# Carpeta donde se guardarán los ejecutables y objetos
+
+PROGRAMAS = posixSincro
 
 # Regla principal
-all: $(EJECUTABLE)
+all: $(PROGRAMAS)
 
-# Compila el programa principal con el módulo
-$(EJECUTABLE): $(MAIN).c $(MODULO).o
-	mkdir -p $(EJECUTABLES)
-	$(GCC) $(MAIN).c $(EJECUTABLES)/$(MODULO).o -o $(EJECUTABLES)/$(EJECUTABLE) $(FLAGS)
-
-# Compila el módulo a archivo objeto
-$(MODULO).o: $(MODULO).c $(MODULO).h
+posixSincro:
 	mkdir -p $(EJECUTABLES)
 	$(GCC) -c $(MODULO).c -o $(EJECUTABLES)/$(MODULO).o
+	$(GCC) $@.c $(EJECUTABLES)/$(MODULO).o -o $(EJECUTABLES)/$@ $(FLAGS)
 
-# Limpieza
 clean:
 	rm -rf $(EJECUTABLES)

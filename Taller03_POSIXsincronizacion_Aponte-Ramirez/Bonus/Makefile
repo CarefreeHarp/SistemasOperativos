@@ -13,33 +13,22 @@
 #*******************************************************************
 
 
-# Compilador
 GCC = gcc
-
-# Flags de compilación
 FLAGS = -pthread -lrt
-
-# Archivos
-MAIN = concurrenciaPOsix
 MODULO = moduloConcurrenciaPosix
-EJECUTABLE = programaPosix
-
-# Carpeta donde se guardarán los ejecutables y objetos
 EJECUTABLES = Ejecutables
+# Carpeta donde se guardarán los ejecutables y objetos
+
+
+PROGRAMAS = concurrenciaPOsix
 
 # Regla principal
-all: $(EJECUTABLE)
+all: $(PROGRAMAS)
 
-# Compila el programa principal con el módulo
-$(EJECUTABLE): $(MAIN).c $(EJECUTABLES)/$(MODULO).o
-	mkdir -p $(EJECUTABLES)
-	$(GCC) $(MAIN).c $(EJECUTABLES)/$(MODULO).o -o $(EJECUTABLES)/$(EJECUTABLE) $(FLAGS)
-
-# Compila el módulo a archivo objeto
-$(EJECUTABLES)/$(MODULO).o: $(MODULO).c $(MODULO).h
+concurrenciaPOsix:
 	mkdir -p $(EJECUTABLES)
 	$(GCC) -c $(MODULO).c -o $(EJECUTABLES)/$(MODULO).o
+	$(GCC) $@.c $(EJECUTABLES)/$(MODULO).o -o $(EJECUTABLES)/$@ $(FLAGS)
 
-# Limpieza
 clean:
 	rm -rf $(EJECUTABLES)
