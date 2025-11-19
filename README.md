@@ -35,4 +35,6 @@ Por favor ver a continuación la estructura y descripción de cada directorio
 contenidos allí. Se usa la funcion stat para indicar características especiales como peso o permisos.
 Nota fichero lab01.c: Este fichero lee el archivo readme.txt, al estar este último fuera del directorio ejecutables, la ruta es ../readme.txt
 
-- **Taller03_POSIXsincronizacion**: Programas escritos en C con el objetivo de estudiar IPC (Inter Process Communication con named semaphores), sincronización (mutex, variables de condición) y paralelismo (dividiendo el trabajo sin necesidad de sincronización). 
+- **Taller03_POSIXsincronizacion**: Programas escritos en C con el objetivo de estudiar IPC (Inter Process Communication con named semaphores), sincronización (mutex, variables de condición) y paralelismo (dividiendo el trabajo sin necesidad de sincronización).
+
+- **Proyecto**: Proyecto orientado a la implementacion/aplicación de todos los temas y conocimientos adquiridos en la asignatura de sistemas operativos (IPC, multithreading, concurrencia, ficheros, compilación modular, etc)
